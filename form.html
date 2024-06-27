@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/form-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="form-container">
+                <form role="form" autocomplete="off" class="form" method="post">
+                    <div class="form__text-content">
+                        <h2 class="form__title">ЗАБРОНИРОВАТЬ</h2>
+                        <div class="form__subtitle">
+                            Напишите, в какие дни вы хотите к нам приехать 
+и наш менеджер свяжется с вами
+                        </div>
+                    </div>
+                    <div class="user-datta">
+                        <div class="input">
+                            <p class="input--title">Имя<span class="mandatory-window">*</span></p>
+                            <input type="text" class="enter username" tabindex="1" required>  
+                        </div>
+                        <div class="input">
+                            <p class="input--title">Телефон<span class="mandatory-window">*</span></p>
+                            <input type="tel" class="enter phone" tabindex="2" required>
+                        </div>
+                        <div class="input">
+                            <p class="input--title">Размещение<span class="mandatory-window">*</span></p>
+                            <select class="enter"  name="" id="">
+                                <option selected disabled></option>
+                                <option value="">Гавань</option>
+                                <option value="">Хайклер</option>
+                                <option value="">Примула</option>
+                                <option value="">Лавры</option>
+                            </select>
+                            
+                        </div>
+                        <div class="input">
+                            <p class="input--title">Коворкинг</p>
+                            
+                            <select class="enter" name="" id="">
+                                <option selected disabled></option>
+                                <option value="">Делюкс</option>
+                                <option value="">Вип-пространство</option>
+                                <option value="">Бизнес Поинт</option>
+                                <option value="">Уголок</option>
+                            </select>
+                        </div>
+                        <div class="cont-data">
+                            <div class="calendar">
+                                <p class="input--title">Дата заезда</p>
+                                <input type="date" class="enter" tabindex="2"></input>
+                            </div>
+                            <div class="calendar">
+                                <p class="input--title">Дата отъезда</p>
+                                <input type="date" class="enter" tabindex="2"></input>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form__couter">
+                            <p class="input--title">Колличество человек:</p>
+                            <div class="counter">
+                                <button class="minus" type="button">-</button>
+                                <input type="text" id="cunter" class="num" value="0" disabled>
+                                <button class="plus" type="button">+</button>
+                            </div>
+                            
+                        </div>
+                        <div class="textarea">
+                            <p class="input--title">Комментарий:</p>
+                            <textarea class="textarea" name="" id="" cols="30" rows="3" maxlength="100"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-btns">
+                        <button type="button" class="form--btn-button">Назад</button>
+                        <button type="submit" class="form--btn-submit">Забронировать</button>
+                    </div>
+                    
+                </form>
+                <div class="img-content">
+                        <img src="./images/Frame 168.png" alt="">
+                </div>
+            </div>
+            <div class="container-message hidden">
+                <div class="message">Менеджер с вами свяжется, в течение 15 минут</div>
+            </div>   
+        </div>
+        
+    </div>
+    <script src="./scripts/script-count.js"></script>
+    <script src="./scripts/script-form-btn.js"></script>
+</body>
+</html>
